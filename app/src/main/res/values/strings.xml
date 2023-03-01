@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NoteTodoUpdateV1</string>
+    <string name="note_and_todo">Note and Todo</string>
+    <string name="note_keeper_memory_assistant">note keeper and memory assistant</string>
+    <string name="what_you_wanna_do_today">what you wanna do?</string>
+    <string name="memo">Memo</string>
+    <string name="to_do">ToDo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_title">Enter title</string>
+    <string name="enter_memo">Enter memo</string>
+</resources>

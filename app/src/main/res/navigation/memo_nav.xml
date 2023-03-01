@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/memo_nav"
+    app:startDestination="@id/memoHomeFragment">
+
+    <fragment
+        android:id="@+id/memoHomeFragment"
+        android:name="com.mkrdeveloper.notetodoupdatev1.memoFragments.MemoHomeFragment"
+        android:label="Memo"
+        tools:layout="@layout/fragment_memo_home" >
+        <action
+            android:id="@+id/action_memoHomeFragment_to_memoUpdateFragment"
+            app:destination="@id/memoUpdateFragment" />
+        <action
+            android:id="@+id/action_memoHomeFragment_to_memoAddFragment"
+            app:destination="@id/memoAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/memoAddFragment"
+        android:name="com.mkrdeveloper.notetodoupdatev1.memoFragments.MemoAddFragment"
+        android:label="Add Memo"
+        tools:layout="@layout/fragment_memo_add" >
+        <action
+            android:id="@+id/action_memoAddFragment_to_memoHomeFragment"
+            app:destination="@id/memoHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/memoUpdateFragment"
+        android:name="com.mkrdeveloper.notetodoupdatev1.memoFragments.MemoUpdateFragment"
+        android:label="Update Memo"
+        tools:layout="@layout/fragment_memo_update" >
+        <action
+            android:id="@+id/action_memoUpdateFragment_to_memoHomeFragment"
+            app:destination="@id/memoHomeFragment" />
+    </fragment>
+</navigation>
